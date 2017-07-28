@@ -1,0 +1,10 @@
+footer{
+      background-color: grey;
+      font-size: small;
+      text-align: center;
+      color: white;
+      min-height: 50px;
+    }
+nav.navbar{
+	margin: 0px;
+}
