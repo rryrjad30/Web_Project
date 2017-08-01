@@ -1,10 +1,44 @@
+
 footer{
-      background-color: grey;
-      font-size: small;
-      text-align: center;
-      color: white;
-      min-height: 50px;
-    }
+	background-color: grey;
+	font-size: small;
+	text-align: center;
+	color: white;
+	min-height: 50px;
+}
 nav.navbar{
 	margin: 0px;
+}
+
+.row {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.thumbnail {
+	display: inline-block;
+}
+
+.thumbnail img {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.thumbnail .caption{
+	padding: 3em;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+	background-color: #000000 !important;
+}
+
+div.jumbotron{
+	padding: 0px;
+	margin: 0px;
+}
+
+form.form-horizontal {
+	padding-top: 1em;
 }
