@@ -17,7 +17,15 @@ nav.navbar{
 	padding-bottom: 2em;
 }
 
-.thumbnail {
+.header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+	text-align: center;
+	padding-left:4em 
+}
+
+/*.thumbnail {
 	display: inline-block;
 }
 
@@ -28,7 +36,7 @@ nav.navbar{
 
 .thumbnail .caption{
 	padding: 3em;
-}
+}*/
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
 	background-color: #000000 !important;
@@ -41,4 +49,14 @@ div.jumbotron{
 
 form.form-horizontal {
 	padding-top: 1em;
+}
+
+.navbar-collapse { margin : 30 !important; }
+
+#notif {
+	color: #808080;
+}
+
+#ref {
+	color: #000000;
 }
