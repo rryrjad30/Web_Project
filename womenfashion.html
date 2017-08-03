@@ -8,7 +8,10 @@
 	<link href="bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Woman Fashion</title>
+  <script type='text/javascript' src='assets/jquery.js'></script>  
+  <link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.4.2" type="text/css" media="all">
+  <link rel="stylesheet" id="style-css" href="assets/style.css" type="text/css" media="all">
+  <title>Woman Fashion</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -66,44 +69,18 @@
       </h4>
     </div>
 
-    <!-- row 1 -->
-    <div class="product">
-    <div class="row">
-      <h5><a href="index.html" style="color: grey">Home </a> > <a href="womenfashion.html" style="color: grey"> Women's Clothing </a></h5>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/w-clothes/wom1.jpg" alt="ZALORA">
-          <div class="caption">
-            <h3>ZALORA</h3>
-            <p>Collection Fluted Sleeve Off Shoulder Dress<br> Rp 299.000</p>
-            <p><a href="#" class="btn btn-primary" role="button">
-              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-              <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-               <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
-               </span> Buy</button></p>
-             </div>
-           </div>
-         </div>
-         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="images/w-clothes/wom2.jpg" alt="ZALORA">
-            <div class="caption">
-              <h3>ZALORA</h3>
-              <p>Collection Pleated Jumpsuit<br> Rp 399.000</p>
-              <p><a href="#" class="btn btn-primary" role="button">
-                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-                <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
-                 </span> Buy</button></p>
-               </div>
-             </div>
-           </div>
-           <div class="col-sm-6 col-md-4">
+    <div id='msg'></div>
+    <div id='products_container'>
+      <!-- row 1 -->
+      <div class="product">
+        <div class="row">
+          <h5><a href="index.html" style="color: grey">Home </a> > <a href="womenfashion.html" style="color: grey"> Women's Clothing </a></h5>
+          <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-              <img src="images/w-clothes/wom3.jpg" alt="ZALORA">
+              <img src="images/w-clothes/wom1.jpg" alt="ZALORA">
               <div class="caption">
                 <h3>ZALORA</h3>
-                <p>Collection Tailored Playsuit<br> Rp 339.000 </p>
+                <p>Collection Fluted Sleeve Off Shoulder Dress<br> Rp 299.000</p>
                 <p><a href="#" class="btn btn-primary" role="button">
                   <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -112,16 +89,12 @@
                  </div>
                </div>
              </div>
-           </div>
-
-           <!-- row 2 -->
-           <div class="row">
-            <div class="col-sm-6 col-md-4">
+             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="images/w-clothes/wom4.jpg" alt="Envy Look">
+                <img src="images/w-clothes/wom2.jpg" alt="ZALORA">
                 <div class="caption">
-                  <h3>Envy Look</h3>
-                  <p>Cotton Half Baggy Pants<br> Rp 374.000</p>
+                  <h3>ZALORA</h3>
+                  <p>Collection Pleated Jumpsuit<br> Rp 399.000</p>
                   <p><a href="#" class="btn btn-primary" role="button">
                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -132,10 +105,10 @@
                </div>
                <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                  <img src="images/w-clothes/wom5.jpg" alt="Envy Look">
+                  <img src="images/w-clothes/wom3.jpg" alt="ZALORA">
                   <div class="caption">
-                    <h3>Envy Look</h3>
-                    <p>The Falling Pants<br> Rp 397.000</p>
+                    <h3>ZALORA</h3>
+                    <p>Collection Tailored Playsuit<br> Rp 339.000 </p>
                     <p><a href="#" class="btn btn-primary" role="button">
                       <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -144,12 +117,16 @@
                      </div>
                    </div>
                  </div>
-                 <div class="col-sm-6 col-md-4">
+               </div>
+
+               <!-- row 2 -->
+               <div class="row">
+                <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
-                    <img src="images/w-clothes/wom6.jpg" alt="Envy Look">
+                    <img src="images/w-clothes/wom4.jpg" alt="Envy Look">
                     <div class="caption">
                       <h3>Envy Look</h3>
-                      <p>I Love You One-Piece Dress<br> Rp 398.000 </p>
+                      <p>Cotton Half Baggy Pants<br> Rp 374.000</p>
                       <p><a href="#" class="btn btn-primary" role="button">
                         <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -158,16 +135,12 @@
                        </div>
                      </div>
                    </div>
-                 </div>
-
-                 <!-- row 3 -->
-                 <div class="row">
-                  <div class="col-sm-6 col-md-4">
+                   <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                      <img src="images/w-clothes/wom7.jpg" alt="Envy Look">
+                      <img src="images/w-clothes/wom5.jpg" alt="Envy Look">
                       <div class="caption">
                         <h3>Envy Look</h3>
-                        <p>Tension T-Shirt and Skirt Set<br> Rp 397.000</p>
+                        <p>The Falling Pants<br> Rp 397.000</p>
                         <p><a href="#" class="btn btn-primary" role="button">
                           <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -178,10 +151,10 @@
                      </div>
                      <div class="col-sm-6 col-md-4">
                       <div class="thumbnail">
-                        <img src="images/w-clothes/wom8.jpg" alt="Envy Look">
+                        <img src="images/w-clothes/wom6.jpg" alt="Envy Look">
                         <div class="caption">
                           <h3>Envy Look</h3>
-                          <p>Off Check Blanc<br> Rp 397.000</p>
+                          <p>I Love You One-Piece Dress<br> Rp 398.000 </p>
                           <p><a href="#" class="btn btn-primary" role="button">
                             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -190,12 +163,16 @@
                            </div>
                          </div>
                        </div>
-                       <div class="col-sm-6 col-md-4">
+                     </div>
+
+                     <!-- row 3 -->
+                     <div class="row">
+                      <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                          <img src="images/w-clothes/wom9.jpg" alt="Mango">
+                          <img src="images/w-clothes/wom7.jpg" alt="Envy Look">
                           <div class="caption">
-                            <h3>Mango</h3>
-                            <p>Jeans Straight Ring<br> Rp 899.000 </p>
+                            <h3>Envy Look</h3>
+                            <p>Tension T-Shirt and Skirt Set<br> Rp 397.000</p>
                             <p><a href="#" class="btn btn-primary" role="button">
                               <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -204,16 +181,12 @@
                              </div>
                            </div>
                          </div>
-                       </div>
-
-                       <!-- row 4 -->
-                       <div class="row">
-                        <div class="col-sm-6 col-md-4">
+                         <div class="col-sm-6 col-md-4">
                           <div class="thumbnail">
-                            <img src="images/w-clothes/wom10.jpg" alt="Mango">
+                            <img src="images/w-clothes/wom8.jpg" alt="Envy Look">
                             <div class="caption">
-                              <h3>Mango</h3>
-                              <p>Lace-Up Cotton Skirt<br> Rp 599.000</p>
+                              <h3>Envy Look</h3>
+                              <p>Off Check Blanc<br> Rp 397.000</p>
                               <p><a href="#" class="btn btn-primary" role="button">
                                 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -224,10 +197,10 @@
                            </div>
                            <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                              <img src="images/w-clothes/wom11.jpg" alt="Lois Jeans">
+                              <img src="images/w-clothes/wom9.jpg" alt="Mango">
                               <div class="caption">
-                                <h3>Lois Jeans</h3>
-                                <p>Cardigan Outerwear<br> Rp 359.500</p>
+                                <h3>Mango</h3>
+                                <p>Jeans Straight Ring<br> Rp 899.000 </p>
                                 <p><a href="#" class="btn btn-primary" role="button">
                                   <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -236,12 +209,16 @@
                                  </div>
                                </div>
                              </div>
-                             <div class="col-sm-6 col-md-4">
+                           </div>
+
+                           <!-- row 4 -->
+                           <div class="row">
+                            <div class="col-sm-6 col-md-4">
                               <div class="thumbnail">
-                                <img src="images/w-clothes/wom12.jpg" alt="Exit">
+                                <img src="images/w-clothes/wom10.jpg" alt="Mango">
                                 <div class="caption">
-                                  <h3>Exit</h3>
-                                  <p>Alisha<br> Rp 239.900 </p>
+                                  <h3>Mango</h3>
+                                  <p>Lace-Up Cotton Skirt<br> Rp 599.000</p>
                                   <p><a href="#" class="btn btn-primary" role="button">
                                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -250,16 +227,12 @@
                                    </div>
                                  </div>
                                </div>
-                             </div>
-
-                             <!-- row 5 -->
-                             <div class="row">
-                              <div class="col-sm-6 col-md-4">
+                               <div class="col-sm-6 col-md-4">
                                 <div class="thumbnail">
-                                  <img src="images/w-clothes/wom13.jpg" alt="3SECOND">
+                                  <img src="images/w-clothes/wom11.jpg" alt="Lois Jeans">
                                   <div class="caption">
-                                    <h3>3SECOND</h3>
-                                    <p>Text Casual Sweater<br> Rp 329.500</p>
+                                    <h3>Lois Jeans</h3>
+                                    <p>Cardigan Outerwear<br> Rp 359.500</p>
                                     <p><a href="#" class="btn btn-primary" role="button">
                                       <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -270,10 +243,10 @@
                                  </div>
                                  <div class="col-sm-6 col-md-4">
                                   <div class="thumbnail">
-                                    <img src="images/w-clothes/wom14.jpg" alt="Mango">
+                                    <img src="images/w-clothes/wom12.jpg" alt="Exit">
                                     <div class="caption">
-                                      <h3>Mango</h3>
-                                      <p>Decorative Bows Trench<br> Rp 1.499.000</p>
+                                      <h3>Exit</h3>
+                                      <p>Alisha<br> Rp 239.900 </p>
                                       <p><a href="#" class="btn btn-primary" role="button">
                                         <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -282,12 +255,16 @@
                                        </div>
                                      </div>
                                    </div>
-                                   <div class="col-sm-6 col-md-4">
+                                 </div>
+
+                                 <!-- row 5 -->
+                                 <div class="row">
+                                  <div class="col-sm-6 col-md-4">
                                     <div class="thumbnail">
-                                      <img src="images/w-clothes/wom15.jpg" alt="Noir Sur Blanc">
+                                      <img src="images/w-clothes/wom13.jpg" alt="3SECOND">
                                       <div class="caption">
-                                        <h3>Noir Sur Blanc</h3>
-                                        <p>Ladies Poncho<br> Rp 599.000 </p>
+                                        <h3>3SECOND</h3>
+                                        <p>Text Casual Sweater<br> Rp 329.500</p>
                                         <p><a href="#" class="btn btn-primary" role="button">
                                           <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -296,16 +273,12 @@
                                          </div>
                                        </div>
                                      </div>
-                                   </div>
-
-                                   <!-- row 6 -->
-                                   <div class="row">
-                                    <div class="col-sm-6 col-md-4">
+                                     <div class="col-sm-6 col-md-4">
                                       <div class="thumbnail">
-                                        <img src="images/w-clothes/wom16.jpg" alt="Arjuna Weda">
+                                        <img src="images/w-clothes/wom14.jpg" alt="Mango">
                                         <div class="caption">
-                                          <h3>Arjuna Weda</h3>
-                                          <p>Dress Batik Raster Parang<br> Rp 349.300</p>
+                                          <h3>Mango</h3>
+                                          <p>Decorative Bows Trench<br> Rp 1.499.000</p>
                                           <p><a href="#" class="btn btn-primary" role="button">
                                             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -316,10 +289,10 @@
                                        </div>
                                        <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
-                                          <img src="images/w-clothes/wom17.jpg" alt="Arjuna Weda">
+                                          <img src="images/w-clothes/wom15.jpg" alt="Noir Sur Blanc">
                                           <div class="caption">
-                                            <h3>Arjuna Weda</h3>
-                                            <p>Sackdress Batik Manuk Kembar<br> Rp 398.300</p>
+                                            <h3>Noir Sur Blanc</h3>
+                                            <p>Ladies Poncho<br> Rp 599.000 </p>
                                             <p><a href="#" class="btn btn-primary" role="button">
                                               <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -328,12 +301,16 @@
                                              </div>
                                            </div>
                                          </div>
-                                         <div class="col-sm-6 col-md-4">
+                                       </div>
+
+                                       <!-- row 6 -->
+                                       <div class="row">
+                                        <div class="col-sm-6 col-md-4">
                                           <div class="thumbnail">
-                                            <img src="images/w-clothes/wom18.jpg" alt="ELSY'S">
+                                            <img src="images/w-clothes/wom16.jpg" alt="Arjuna Weda">
                                             <div class="caption">
-                                              <h3>ELSY'S</h3>
-                                              <p>Blus Rompi Bahan Kerut Bros Burung<br> Rp 299.900 </p>
+                                              <h3>Arjuna Weda</h3>
+                                              <p>Dress Batik Raster Parang<br> Rp 349.300</p>
                                               <p><a href="#" class="btn btn-primary" role="button">
                                                 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -342,16 +319,12 @@
                                                </div>
                                              </div>
                                            </div>
-                                         </div>
-
-                                         <!-- row 7 -->
-                                         <div class="row">
-                                          <div class="col-sm-6 col-md-4">
+                                           <div class="col-sm-6 col-md-4">
                                             <div class="thumbnail">
-                                              <img src="images/w-clothes/wom19.jpg" alt="Envy Look">
+                                              <img src="images/w-clothes/wom17.jpg" alt="Arjuna Weda">
                                               <div class="caption">
-                                                <h3>Envy Look</h3>
-                                                <p>Made One Piece<br> Rp 386.000</p>
+                                                <h3>Arjuna Weda</h3>
+                                                <p>Sackdress Batik Manuk Kembar<br> Rp 398.300</p>
                                                 <p><a href="#" class="btn btn-primary" role="button">
                                                   <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -362,10 +335,10 @@
                                              </div>
                                              <div class="col-sm-6 col-md-4">
                                               <div class="thumbnail">
-                                                <img src="images/w-clothes/wom20.jpg" alt="Envy Look">
+                                                <img src="images/w-clothes/wom18.jpg" alt="ELSY'S">
                                                 <div class="caption">
-                                                  <h3>Envy Look</h3>
-                                                  <p>Suspender Jump Suit<br> Rp 397.000</p>
+                                                  <h3>ELSY'S</h3>
+                                                  <p>Blus Rompi Bahan Kerut Bros Burung<br> Rp 299.900 </p>
                                                   <p><a href="#" class="btn btn-primary" role="button">
                                                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -374,12 +347,16 @@
                                                    </div>
                                                  </div>
                                                </div>
-                                               <div class="col-sm-6 col-md-4">
+                                             </div>
+
+                                             <!-- row 7 -->
+                                             <div class="row">
+                                              <div class="col-sm-6 col-md-4">
                                                 <div class="thumbnail">
-                                                  <img src="images/w-clothes/wom21.jpg" alt="Envy Look">
+                                                  <img src="images/w-clothes/wom19.jpg" alt="Envy Look">
                                                   <div class="caption">
                                                     <h3>Envy Look</h3>
-                                                    <p>Boat Neck Blouse<br> Rp 397.000 </p>
+                                                    <p>Made One Piece<br> Rp 386.000</p>
                                                     <p><a href="#" class="btn btn-primary" role="button">
                                                       <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -388,16 +365,12 @@
                                                      </div>
                                                    </div>
                                                  </div>
-                                               </div>
-
-                                               <!-- row 8 -->
-                                               <div class="row">
-                                                <div class="col-sm-6 col-md-4">
+                                                 <div class="col-sm-6 col-md-4">
                                                   <div class="thumbnail">
-                                                    <img src="images/w-clothes/wom22.jpg" alt="ZALORA">
+                                                    <img src="images/w-clothes/wom20.jpg" alt="Envy Look">
                                                     <div class="caption">
-                                                      <h3>ZALORA</h3>
-                                                      <p>Love Full Circle Skirt dengan Waist Tie<br> Rp 279.000</p>
+                                                      <h3>Envy Look</h3>
+                                                      <p>Suspender Jump Suit<br> Rp 397.000</p>
                                                       <p><a href="#" class="btn btn-primary" role="button">
                                                         <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -408,10 +381,10 @@
                                                    </div>
                                                    <div class="col-sm-6 col-md-4">
                                                     <div class="thumbnail">
-                                                      <img src="images/w-clothes/wom23.jpg" alt="Mango">
+                                                      <img src="images/w-clothes/wom21.jpg" alt="Envy Look">
                                                       <div class="caption">
-                                                        <h3>Mango</h3>
-                                                        <p>Vent Pencil Skirt<br> Rp 499.000</p>
+                                                        <h3>Envy Look</h3>
+                                                        <p>Boat Neck Blouse<br> Rp 397.000 </p>
                                                         <p><a href="#" class="btn btn-primary" role="button">
                                                           <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -420,12 +393,16 @@
                                                          </div>
                                                        </div>
                                                      </div>
-                                                     <div class="col-sm-6 col-md-4">
+                                                   </div>
+
+                                                   <!-- row 8 -->
+                                                   <div class="row">
+                                                    <div class="col-sm-6 col-md-4">
                                                       <div class="thumbnail">
-                                                        <img src="images/w-clothes/wom24.jpg" alt="Lois Jeans">
+                                                        <img src="images/w-clothes/wom22.jpg" alt="ZALORA">
                                                         <div class="caption">
-                                                          <h3>Lois Jeans</h3>
-                                                          <p>Long Pants Denim<br> Rp 459.500 </p>
+                                                          <h3>ZALORA</h3>
+                                                          <p>Love Full Circle Skirt dengan Waist Tie<br> Rp 279.000</p>
                                                           <p><a href="#" class="btn btn-primary" role="button">
                                                             <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -434,16 +411,12 @@
                                                            </div>
                                                          </div>
                                                        </div>
-                                                     </div>
-
-                                                     <!-- row 9 -->
-                                                     <div class="row">
-                                                      <div class="col-sm-6 col-md-4">
+                                                       <div class="col-sm-6 col-md-4">
                                                         <div class="thumbnail">
-                                                          <img src="images/w-clothes/wom25.jpg" alt="Something Borrowed">
+                                                          <img src="images/w-clothes/wom23.jpg" alt="Mango">
                                                           <div class="caption">
-                                                            <h3>Something Borrowed</h3>
-                                                            <p>Embroidered High Waist Shorts<br> Rp 279.000</p>
+                                                            <h3>Mango</h3>
+                                                            <p>Vent Pencil Skirt<br> Rp 499.000</p>
                                                             <p><a href="#" class="btn btn-primary" role="button">
                                                               <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -454,10 +427,10 @@
                                                          </div>
                                                          <div class="col-sm-6 col-md-4">
                                                           <div class="thumbnail">
-                                                            <img src="images/w-clothes/wom26.jpg" alt="ZALORA">
+                                                            <img src="images/w-clothes/wom24.jpg" alt="Lois Jeans">
                                                             <div class="caption">
-                                                              <h3>ZALORA</h3>
-                                                              <p>Love Skort with Waist Straps<br> Rp 279.000</p>
+                                                              <h3>Lois Jeans</h3>
+                                                              <p>Long Pants Denim<br> Rp 459.500 </p>
                                                               <p><a href="#" class="btn btn-primary" role="button">
                                                                 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -466,12 +439,16 @@
                                                                </div>
                                                              </div>
                                                            </div>
-                                                           <div class="col-sm-6 col-md-4">
+                                                         </div>
+
+                                                         <!-- row 9 -->
+                                                         <div class="row">
+                                                          <div class="col-sm-6 col-md-4">
                                                             <div class="thumbnail">
-                                                              <img src="images/w-clothes/wom27.jpg" alt="Mango">
+                                                              <img src="images/w-clothes/wom25.jpg" alt="Something Borrowed">
                                                               <div class="caption">
-                                                                <h3>Mango</h3>
-                                                                <p>Flowy Skirt<br> Rp 499.000 </p>
+                                                                <h3>Something Borrowed</h3>
+                                                                <p>Embroidered High Waist Shorts<br> Rp 279.000</p>
                                                                 <p><a href="#" class="btn btn-primary" role="button">
                                                                   <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -480,16 +457,12 @@
                                                                  </div>
                                                                </div>
                                                              </div>
-                                                           </div>
-
-                                                           <!-- row 10 -->
-                                                           <div class="row">
-                                                            <div class="col-sm-6 col-md-4">
+                                                             <div class="col-sm-6 col-md-4">
                                                               <div class="thumbnail">
-                                                                <img src="images/w-clothes/wom28.jpg" alt="Something Borrowed">
+                                                                <img src="images/w-clothes/wom26.jpg" alt="ZALORA">
                                                                 <div class="caption">
-                                                                  <h3>Something Borrowed</h3>
-                                                                  <p>Cut-in Romper<br> Rp 299.000</p>
+                                                                  <h3>ZALORA</h3>
+                                                                  <p>Love Skort with Waist Straps<br> Rp 279.000</p>
                                                                   <p><a href="#" class="btn btn-primary" role="button">
                                                                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -500,10 +473,10 @@
                                                                </div>
                                                                <div class="col-sm-6 col-md-4">
                                                                 <div class="thumbnail">
-                                                                  <img src="images/w-clothes/wom29.jpg" alt="GRAPHIS">
+                                                                  <img src="images/w-clothes/wom27.jpg" alt="Mango">
                                                                   <div class="caption">
-                                                                    <h3>GRAPHIS</h3>
-                                                                    <p>Long Overall<br> Rp 559.000</p>
+                                                                    <h3>Mango</h3>
+                                                                    <p>Flowy Skirt<br> Rp 499.000 </p>
                                                                     <p><a href="#" class="btn btn-primary" role="button">
                                                                       <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -512,12 +485,16 @@
                                                                      </div>
                                                                    </div>
                                                                  </div>
-                                                                 <div class="col-sm-6 col-md-4">
+                                                               </div>
+
+                                                               <!-- row 10 -->
+                                                               <div class="row">
+                                                                <div class="col-sm-6 col-md-4">
                                                                   <div class="thumbnail">
-                                                                    <img src="images/w-clothes/wom30.jpg" alt="ZALORA">
+                                                                    <img src="images/w-clothes/wom28.jpg" alt="Something Borrowed">
                                                                     <div class="caption">
-                                                                      <h3>ZALORA</h3>
-                                                                      <p>Love Embroidered Cold Shoulder Playsuit<br> Rp 349.000 </p>
+                                                                      <h3>Something Borrowed</h3>
+                                                                      <p>Cut-in Romper<br> Rp 299.000</p>
                                                                       <p><a href="#" class="btn btn-primary" role="button">
                                                                         <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
@@ -526,8 +503,37 @@
                                                                        </div>
                                                                      </div>
                                                                    </div>
+                                                                   <div class="col-sm-6 col-md-4">
+                                                                    <div class="thumbnail">
+                                                                      <img src="images/w-clothes/wom29.jpg" alt="GRAPHIS">
+                                                                      <div class="caption">
+                                                                        <h3>GRAPHIS</h3>
+                                                                        <p>Long Overall<br> Rp 559.000</p>
+                                                                        <p><a href="#" class="btn btn-primary" role="button">
+                                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                          <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                           <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
+                                                                           </span> Buy</button></p>
+                                                                         </div>
+                                                                       </div>
+                                                                     </div>
+                                                                     <div class="col-sm-6 col-md-4">
+                                                                      <div class="thumbnail">
+                                                                        <img src="images/w-clothes/wom30.jpg" alt="ZALORA">
+                                                                        <div class="caption">
+                                                                          <h3>ZALORA</h3>
+                                                                          <p>Love Embroidered Cold Shoulder Playsuit<br> Rp 349.000 </p>
+                                                                          <p><a href="#" class="btn btn-primary" role="button">
+                                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                            <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                             <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
+                                                                             </span> Buy</button></p>
+                                                                           </div>
+                                                                         </div>
+                                                                       </div>
+                                                                     </div>
+                                                                   </div>
                                                                  </div>
-</div>
                                                                  <div id = "box"><p id = "number">0</p></div>
 
                                                                  <!-- Footer -->
@@ -539,6 +545,15 @@
                                                                   </footer>
                                                                 </div>
 
+                                                                <div id='wish_list' class='col-s'>
+                                                                  <p class="wish_list_heading">
+                                                                    <span id='listitem'>0</span>
+                                                                    <span id='p_label'>Wishlist</span>
+                                                                  </p>
+                                                                  <table id='wish_list_item' border='0'></table>
+                                                                </div>
+
+                                                                <script type='text/javascript' src='assets/script.js'></script>
                                                                 <script src="js\jquery-3.2.1.min.js"></script>
                                                                 <script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
 

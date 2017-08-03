@@ -8,7 +8,10 @@
 	<link href="bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Woman Fashion</title>
+  <script type='text/javascript' src='assets/jquery.js'></script>  
+  <link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.4.2" type="text/css" media="all">
+  <link rel="stylesheet" id="style-css" href="assets/style.css" type="text/css" media="all">
+  <title>Woman Fashion</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -65,14 +68,16 @@
       </h4>
     </div>
 
-<div class="product">
- <div class="row">
-      <h5><a href="index.html" style="color: grey">Home </a> > <a href="mensshoes.html" style="color: grey"> Men's Shoes </a></h5>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="images/m-shoes/ms1.jpg" alt="24:01">
-          <div class="caption">
-            <h3>24:01</h3>
+    <div id='msg'></div>
+    <div id='products_container'>
+      <div class="product">
+       <div class="row">
+        <h5><a href="index.html" style="color: grey">Home </a> > <a href="mensshoes.html" style="color: grey"> Men's Shoes </a></h5>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="images/m-shoes/ms1.jpg" alt="24:01">
+            <div class="caption">
+              <h3>24:01</h3>
               <p>Mix Material Sneakers<br> Rp 599.000</p>
               <p><a href="#" class="btn btn-primary" role="button">
                 <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
@@ -519,44 +524,53 @@
                                                                         <p><a href="#" class="btn btn-primary" role="button">
                                                                           <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                                           <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                                           <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
                                                                            </span> Buy</button></p>
                                                                          </div>
                                                                        </div>
                                                                      </div>
                                                                    </div>
 
-</div>
+                                                                 </div>
+                                                               </div>
+                                                               <div id = "box"><p id = "number">0</p></div>
 
-    <div id = "box"><p id = "number">0</p></div>
-    
-    <!-- Footer -->
-    <div class = "footer">
-      <footer>
-       <p>Copyright &copy; 2017 Pierry &lt;<a href="mailto:pierry27@gmail.com">
-        pierry27@gmail.com</a>&gt;&lt;<a href="mailto:vleonie.vl@gmail.com">
-                  vleonie.vl@gmail.com</a>&gt;/p>
-      </footer>
-    </div>
+                                                               <!-- Footer -->
+                                                               <div class = "footer">
+                                                                <footer>
+                                                                 <p>Copyright &copy; 2017 Pierry &lt;<a href="mailto:pierry27@gmail.com">
+                                                                  pierry27@gmail.com</a>&gt;&lt;<a href="mailto:vleonie.vl@gmail.com">
+                                                                  vleonie.vl@gmail.com</a>&gt;/p>
+                                                                </footer>
+                                                              </div>
 
-    <script src="js\jquery-3.2.1.min.js"></script>
-    <script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+                                                              <div id='wish_list' class='col-s'>
+                                                                <p class="wish_list_heading">
+                                                                  <span id='listitem'>0</span>
+                                                                  <span id='p_label'>Wishlist</span>
+                                                                </p>
+                                                                <table id='wish_list_item' border='0'></table>
+                                                              </div>
 
-    <script type="text/javascript">
-      var n = 0;
-      function increaseNumber (){
-        n=n+1;
-        document.getElementById('number').innerHTML = n;
-        zeroNumber();
-      }
-      function zeroNumber (){
-        if(document.getElementById('number').innerHTML==0){
-          document.getElementById('box').style.display ="none";
-        }
-        else{
-          document.getElementById('box').style.display ="block";
-        }
-      }
-    </script>
-  </body>
-  </html>
+                                                              <script type='text/javascript' src='assets/script.js'></script>
+                                                              <script src="js\jquery-3.2.1.min.js"></script>
+                                                              <script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+
+                                                              <script type="text/javascript">
+                                                                var n = 0;
+                                                                function increaseNumber (){
+                                                                  n=n+1;
+                                                                  document.getElementById('number').innerHTML = n;
+                                                                  zeroNumber();
+                                                                }
+                                                                function zeroNumber (){
+                                                                  if(document.getElementById('number').innerHTML==0){
+                                                                    document.getElementById('box').style.display ="none";
+                                                                  }
+                                                                  else{
+                                                                    document.getElementById('box').style.display ="block";
+                                                                  }
+                                                                }
+                                                              </script>
+                                                            </body>
+                                                            </html>

@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type='text/javascript' src='assets/jquery.js'></script>
+  <link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.4.2" type="text/css" media="all">
+  <link rel="stylesheet" id="style-css" href="assets/style.css" type="text/css" media="all">
   <title>Man Fashion</title>
 </head>
 <body onload="zeroNumber()">
@@ -67,65 +70,34 @@
     </h4>
   </div>
 
-
-  <!-- row 1 -->
-  <div class="product">
-  <div class="row">
-    <h5><a href="index.html" style="color: grey">Home </a> > <a href="menfashion.html" style="color: grey"> Men's Clothing </a></h5>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="images/m-clothes/men1.jpg" alt="Tolliver">
-        <div class="caption">
-          <h3>Tolliver</h3>
-          <p>Basic Long Sleeve Tee<br> Rp 149.000</p>
-          <p><a href="#" class="btn btn-primary" role="button">
-            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-            <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"">        	
-              </span> Buy</button></p>
-            </div>
-          </div>
-        </div>
+  <div id='msg'></div>
+  <div id='products_container'>
+    <!-- row 1 -->
+    <div class="product">
+      <div class="row">
+        <h5><a href="index.html" style="color: grey">Home </a> > <a href="menfashion.html" style="color: grey"> Men's Clothing </a></h5>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="images/m-clothes/men2.jpg" alt="ZALORA">
+            <img src="images/m-clothes/men1.jpg" alt="Tolliver">
             <div class="caption">
-              <h3>ZALORA</h3>
-              <p>7th Chino Shorts with Back Welt Pocket<br> Rp 279.000</p>
-              <p><a href="#" class="btn btn-primary" role="button">
-                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+              <h3>Tolliver</h3>
+              <p>Basic Long Sleeve Tee<br> Rp 149.000</p>
+              <p><button type="button" class = "btn btn-primary wishlist" product_name='Tolliver Basic Long Sleeve Tee' product_id='men1' product_price=' 149.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
-                 </span> Buy</button></p>
-               </div>
-             </div>
-           </div>
-           <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="images/m-clothes/men3.jpg" alt="Tolliver">
-              <div class="caption">
-                <h3>Tolliver</h3>
-                <p>Tolliver<br> Rp 149.000 </p>
-                <p><a href="#" class="btn btn-primary" role="button">
-                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-                  <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
-                   </span> Buy</button></p>
-                 </div>
-               </div>
-             </div>
-           </div>
-
-           <!-- row 2 -->
-           <div class="row">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"">        	
+                  </span> Buy</button></p>
+                </div>
+              </div>
+            </div>
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="images/m-clothes/men4.jpg" alt="Tolliver">
+                <img src="images/m-clothes/men2.jpg" alt="ZALORA">
                 <div class="caption">
-                  <h3>Tolliver</h3>
-                  <p>Basic Ragian Tee 3/4 Sleeve<br> Rp 149.000</p>
-                  <p><a href="#" class="btn btn-primary" role="button">
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                  <h3>ZALORA</h3>
+                  <p>7th Chino Shorts with Back Welt Pocket<br> Rp 279.000</p>
+                  <p><button type="button" class = "btn btn-primary wishlist" product_name='Zalora 7th Chino Shorts with Back Welt Pocket' product_id='men2' product_price=' 279.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                      </span> Buy</button></p>
@@ -134,44 +106,44 @@
                </div>
                <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                  <img src="images/m-clothes/men5.jpg" alt="Lee">
+                  <img src="images/m-clothes/men3.jpg" alt="Tolliver">
                   <div class="caption">
-                    <h3>Lee</h3>
-                    <p>Lee Slim Jeans<br> Rp 599.900</p>
-                    <p><a href="#" class="btn btn-primary" role="button">
-                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                    <h3>Tolliver</h3>
+                    <p>Basic Long Sleeve Tee<br> Rp 149.000 </p>
+                    <p><button type="button" class = "btn btn-primary wishlist" product_name='Tolliver Basic Long Sleeve Tee' product_id='men3' product_price=' 149.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                        </span> Buy</button></p>
                      </div>
                    </div>
                  </div>
-                 <div class="col-sm-6 col-md-4">
+               </div>
+
+               <!-- row 2 -->
+               <div class="row">
+                <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
-                    <img src="images/m-clothes/men6.jpg" alt="FTL">
+                    <img src="images/m-clothes/men4.jpg" alt="Tolliver">
                     <div class="caption">
-                      <h3>FTL</h3>
-                      <p>Short Sleeve Shirt<br> Rp 379.900 </p>
-                      <p><a href="#" class="btn btn-primary" role="button">
-                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                      <h3>Tolliver</h3>
+                      <p>Basic Ragian Tee 3/4 Sleeve<br> Rp 149.000</p>
+                      <p><button type="button" class = "btn btn-primary wishlist" product_name='Tolliver Basic Ragian Tee 3/4 Sleeve' product_id='men4' product_price=' 149.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                          </span> Buy</button></p>
                        </div>
                      </div>
                    </div>
-                 </div>
-
-                 <!-- row 3 -->
-                 <div class="row">
                    <div class="col-sm-6 col-md-4">
-                     <div class="thumbnail">
-                       <img src="images/m-clothes/men7.jpg" alt="17seven Original">
-                       <div class="caption">
-                         <h3>17seven Original</h3>
-                         <p>Longsleeve Base<br> Rp 185.000</p>
-                         <p><a href="#" class="btn btn-primary" role="button">
-                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                    <div class="thumbnail">
+                      <img src="images/m-clothes/men5.jpg" alt="Lee">
+                      <div class="caption">
+                        <h3>Lee</h3>
+                        <p>Lee Slim Jeans<br> Rp 599.900</p>
+                        <p><button type="button" class = "btn btn-primary wishlist" product_name='Lee Slim Jeans' product_id='men5' product_price=' 599.900' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                            </span> Buy</button></p>
@@ -180,44 +152,44 @@
                      </div>
                      <div class="col-sm-6 col-md-4">
                       <div class="thumbnail">
-                        <img src="images/m-clothes/men8.jpg" alt="Cressida">
+                        <img src="images/m-clothes/men6.jpg" alt="FTL">
                         <div class="caption">
-                          <h3>Cressida</h3>
-                          <p>3 Tone T-Shirt<br> Rp 189.900</p>
-                          <p><a href="#" class="btn btn-primary" role="button">
-                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                          <h3>FTL</h3>
+                          <p>Short Sleeve Shirt<br> Rp 379.900 </p>
+                          <p><button type="button" class = "btn btn-primary wishlist" product_name='FTL Short Sleeve Shirt' product_id='men6' product_price=' 379.900' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                              </span> Buy</button></p>
                            </div>
                          </div>
                        </div>
+                     </div>
+
+                     <!-- row 3 -->
+                     <div class="row">
                        <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                          <img src="images/m-clothes/men9.jpg" alt="Cressida">
-                          <div class="caption">
-                            <h3>Cressida</h3>
-                            <p>NI Tee<br> Rp 169.900 </p>
-                            <p><a href="#" class="btn btn-primary" role="button">
-                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                         <div class="thumbnail">
+                           <img src="images/m-clothes/men7.jpg" alt="17seven Original">
+                           <div class="caption">
+                             <h3>17seven Original</h3>
+                             <p>Longsleeve Base<br> Rp 185.000</p>
+                             <p><button type="button" class = "btn btn-primary wishlist" product_name='17seven Original Longsleeve Base' product_id='men7' product_price=' 185.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                </span> Buy</button></p>
                              </div>
                            </div>
                          </div>
-                       </div>
-
-                       <!-- row 4 -->
-                       <div class="row">
-                        <div class="col-sm-6 col-md-4">
+                         <div class="col-sm-6 col-md-4">
                           <div class="thumbnail">
-                            <img src="images/m-clothes/men10.jpg" alt="Salt n Pepper">
+                            <img src="images/m-clothes/men8.jpg" alt="Cressida">
                             <div class="caption">
-                              <h3>Salt n Pepper</h3>
-                              <p>Mens Jogger<br> Rp 469.000</p>
-                              <p><a href="#" class="btn btn-primary" role="button">
-                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                              <h3>Cressida</h3>
+                              <p>3 Tone T-Shirt<br> Rp 189.900</p>
+                              <p><button type="button" class = "btn btn-primary wishlist" product_name='Cressida 3 Tone T-Shirt' product_id='men8' product_price=' 189.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                  </span> Buy</button></p>
@@ -226,11 +198,12 @@
                            </div>
                            <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                              <img src="images/m-clothes/men11.jpg" alt="Skelly">
+                              <img src="images/m-clothes/men9.jpg" alt="Cressida">
                               <div class="caption">
-                                <h3>Skelly</h3>
-                                <p>Skelly Nitty Gritty Athletic Tee <br> Rp 199.000</p>
-                                <p><a href="#" class="btn btn-primary" role="button">
+                                <h3>Cressida</h3>
+                                <p>NI Tee<br> Rp 169.900 </p>
+                                <p><button type="button" class = "btn btn-primary wishlist" product_name='Cressida NI Tee' product_id='men9' product_price=' 169.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                   <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
@@ -238,32 +211,32 @@
                                  </div>
                                </div>
                              </div>
-                             <div class="col-sm-6 col-md-4">
+                           </div>
+
+                           <!-- row 4 -->
+                           <div class="row">
+                            <div class="col-sm-6 col-md-4">
                               <div class="thumbnail">
-                                <img src="images/m-clothes/men12.jpg" alt="FTL">
+                                <img src="images/m-clothes/men10.jpg" alt="Salt n Pepper">
                                 <div class="caption">
-                                  <h3>FTL</h3>
-                                  <p>Short Sleeve Shirt <br> Rp 379.900 </p>
-                                  <p><a href="#" class="btn btn-primary" role="button">
-                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                  <h3>Salt n Pepper</h3>
+                                  <p>Mens Jogger<br> Rp 469.000</p>
+                                  <p><button type="button" class = "btn btn-primary wishlist" product_name='Salt n Pepper Mens Jogger' product_id='men10' product_price=' 469.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                      </span> Buy</button></p>
                                    </div>
                                  </div>
                                </div>
-                             </div>
-
-                             <!-- row 5 -->
-                             <div class="row">
-                              <div class="col-sm-6 col-md-4">
+                               <div class="col-sm-6 col-md-4">
                                 <div class="thumbnail">
-                                  <img src="images/m-clothes/men13.jpg" alt="ZALORA">
+                                  <img src="images/m-clothes/men11.jpg" alt="Skelly">
                                   <div class="caption">
-                                    <h3>ZALORA</h3>
-                                    <p>Checked Brushed Cotton Trousers<br> Rp 229.000</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">
-                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                    <h3>Skelly</h3>
+                                    <p>Skelly Nitty Gritty Athletic Tee <br> Rp 199.000</p>
+                                    <p><button type="button" class = "btn btn-primary wishlist" product_name='Skelly Nitty Gritty Athletic Tee' product_id='men11' product_price=' 199.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                        </span> Buy</button></p>
@@ -272,44 +245,44 @@
                                  </div>
                                  <div class="col-sm-6 col-md-4">
                                   <div class="thumbnail">
-                                    <img src="images/m-clothes/men14.jpg" alt="24:01">
+                                    <img src="images/m-clothes/men12.jpg" alt="FTL">
                                     <div class="caption">
-                                      <h3>24:01</h3>
-                                      <p>Drop Crotch Shorts with Flap Pocket<br> Rp 249.000</p>
-                                      <p><a href="#" class="btn btn-primary" role="button">
-                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                      <h3>FTL</h3>
+                                      <p>Short Sleeve Shirt <br> Rp 379.900 </p>
+                                      <p><button type="button" class = "btn btn-primary wishlist" product_name='FTL Short Sleeve Tee' product_id='men12' product_price=' 379.900' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                          </span> Buy</button></p>
                                        </div>
                                      </div>
                                    </div>
-                                   <div class="col-sm-6 col-md-4">
+                                 </div>
+
+                                 <!-- row 5 -->
+                                 <div class="row">
+                                  <div class="col-sm-6 col-md-4">
                                     <div class="thumbnail">
-                                      <img src="images/m-clothes/men15.jpg" alt="Danar Hadi">
+                                      <img src="images/m-clothes/men13.jpg" alt="ZALORA">
                                       <div class="caption">
-                                        <h3>Danar Hadi</h3>
-                                        <p>Kemeja Pendek Batik Print Motif Lokcan Wonogiren<br> Rp 297.500 </p>
-                                        <p><a href="#" class="btn btn-primary" role="button">
-                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                        <h3>ZALORA</h3>
+                                        <p>Checked Brushed Cotton Trousers<br> Rp 229.000</p>
+                                        <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Checked Brushed Cotton Trousers' product_id='men13' product_price=' 229.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                            </span> Buy</button></p>
                                          </div>
                                        </div>
                                      </div>
-                                   </div>
-
-                                   <!-- row 6 -->
-                                   <div class="row">
-                                    <div class="col-sm-6 col-md-4">
+                                     <div class="col-sm-6 col-md-4">
                                       <div class="thumbnail">
-                                        <img src="images/m-clothes/men16.jpg" alt="ZALORA">
+                                        <img src="images/m-clothes/men14.jpg" alt="24:01">
                                         <div class="caption">
-                                          <h3>ZALORA</h3>
-                                          <p>Printed Seersucker Shorts<br> Rp 279.000</p>
-                                          <p><a href="#" class="btn btn-primary" role="button">
-                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                          <h3>24:01</h3>
+                                          <p>Drop Crotch Shorts with Flap Pocket<br> Rp 249.000</p>
+                                          <p><button type="button" class = "btn btn-primary wishlist" product_name='24:01 Drop Crotch Shorts with Flap Pocket' product_id='men14' product_price=' 249.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                              </span> Buy</button></p>
@@ -318,90 +291,90 @@
                                        </div>
                                        <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
-                                          <img src="images/m-clothes/men17.jpg" alt="ZALORA">
+                                          <img src="images/m-clothes/men15.jpg" alt="Danar Hadi">
                                           <div class="caption">
-                                            <h3>ZALORA</h3>
-                                            <p>Slim Fit Chambray Trousers<br> Rp 349.000</p>
-                                            <p><a href="#" class="btn btn-primary" role="button">
-                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                            <h3>Danar Hadi</h3>
+                                            <p>Kemeja Pendek Batik Print Motif Lokcan Wonogiren<br> Rp 297.500 </p>
+                                            <p><button type="button" class = "btn btn-primary wishlist" product_name='Danar Hadi Kemeja Pendek Batik Print Motif Lokcan Wonogiren' product_id='men15' product_price=' 297.500' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                </span> Buy</button></p>
                                              </div>
                                            </div>
                                          </div>
-                                         <div class="col-sm-6 col-md-4">
+                                       </div>
+
+                                       <!-- row 6 -->
+                                       <div class="row">
+                                        <div class="col-sm-6 col-md-4">
                                           <div class="thumbnail">
-                                            <img src="images/m-clothes/men18.jpg" alt="EMBA JEANS">
+                                            <img src="images/m-clothes/men16.jpg" alt="ZALORA">
                                             <div class="caption">
-                                              <h3>EMBA JEANS</h3>
-                                              <p>Dapper One <br> Rp 459.000 </p>
-                                              <p><a href="#" class="btn btn-primary" role="button">
-                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                              <h3>ZALORA</h3>
+                                              <p>Printed Seersucker Shorts<br> Rp 279.000</p>
+                                              <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Printed Seersucker Shorts' product_id='men16' product_price=' 279.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                  </span> Buy</button></p>
                                                </div>
                                              </div>
                                            </div>
-                                         </div>
-
-                                         <!-- row 7 -->
-                                         <div class="row">
-                                          <div class="col-sm-6 col-md-4">
+                                           <div class="col-sm-6 col-md-4">
                                             <div class="thumbnail">
-                                              <img src="images/m-clothes/men19.jpg" alt="Arjuna Weda">
+                                              <img src="images/m-clothes/men17.jpg" alt="ZALORA">
                                               <div class="caption">
-                                                <h3>Arjuna Weda</h3>
-                                                <p>Kemeja Batik Rami Parang Kembang<br> Rp 373.100</p>
-                                                <p><a href="#" class="btn btn-primary" role="button">
-                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                <h3>ZALORA</h3>
+                                                <p>Slim Fit Chambray Trousers<br> Rp 349.000</p>
+                                                <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Slim Fit Chambray Trousers' product_id='men17' product_price=' 349.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                    </span> Buy</button></p>
                                                  </div>
                                                </div>
                                              </div>
                                              <div class="col-sm-6 col-md-4">
                                               <div class="thumbnail">
-                                                <img src="images/m-clothes/men20.jpg" alt="Danar Hadi">
+                                                <img src="images/m-clothes/men18.jpg" alt="EMBA JEANS">
                                                 <div class="caption">
-                                                  <h3>Danar Hadi</h3>
-                                                  <p>Kemeja Pendek Batik Print Motif Parang Randu Sari<br> Rp 297.500</p>
-                                                  <p><a href="#" class="btn btn-primary" role="button">
-                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                  <h3>EMBA JEANS</h3>
+                                                  <p>Dapper One <br> Rp 459.000 </p>
+                                                  <p><button type="button" class = "btn btn-primary wishlist" product_name='EMBA JEANS Dapper One' product_id='men18' product_price=' 459.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                     <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                      </span> Buy</button></p>
                                                    </div>
                                                  </div>
                                                </div>
-                                               <div class="col-sm-6 col-md-4">
+                                             </div>
+
+                                             <!-- row 7 -->
+                                             <div class="row">
+                                              <div class="col-sm-6 col-md-4">
                                                 <div class="thumbnail">
-                                                  <img src="images/m-clothes/men21.jpg" alt="Billabong">
+                                                  <img src="images/m-clothes/men19.jpg" alt="Arjuna Weda">
                                                   <div class="caption">
-                                                    <h3>Billabong</h3>
-                                                    <p>All Day X <br> Rp 699.000 </p>
-                                                    <p><a href="#" class="btn btn-primary" role="button">
-                                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                    <h3>Arjuna Weda</h3>
+                                                    <p>Kemeja Batik Rami Parang Kembang<br> Rp 373.100</p>
+                                                    <p><button type="button" class = "btn btn-primary wishlist" product_name='Arjuna Weda Kemeja Batik Rami Parang Kembang' product_id='men19' product_price=' 373.100' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
                                                        </span> Buy</button></p>
                                                      </div>
                                                    </div>
                                                  </div>
-                                               </div>
-
-                                               <!-- row 8 -->
-                                               <div class="row">
-                                                <div class="col-sm-6 col-md-4">
+                                                 <div class="col-sm-6 col-md-4">
                                                   <div class="thumbnail">
-                                                    <img src="images/m-clothes/men22.jpg" alt="BRBL">
+                                                    <img src="images/m-clothes/men20.jpg" alt="Danar Hadi">
                                                     <div class="caption">
-                                                      <h3>BRBL</h3>
-                                                      <p>PSNA. 01<br> Rp 165.000</p>
-                                                      <p><a href="#" class="btn btn-primary" role="button">
-                                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                      <h3>Danar Hadi</h3>
+                                                      <p>Kemeja Pendek Batik Print Motif Parang Randu Sari<br> Rp 297.500</p>
+                                                      <p><button type="button" class = "btn btn-primary wishlist" product_name='Danar Hadi Kemeja Pendek Batik Print Motif Parang Randu Sari' product_id='men20' product_price=' 297.500' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
                                                          </span> Buy</button></p>
@@ -410,26 +383,12 @@
                                                    </div>
                                                    <div class="col-sm-6 col-md-4">
                                                     <div class="thumbnail">
-                                                      <img src="images/m-clothes/men23.jpg" alt="BRBL">
+                                                      <img src="images/m-clothes/men21.jpg" alt="Billabong">
                                                       <div class="caption">
-                                                        <h3>BRBL</h3>
-                                                        <p>PSNA. 01<br> Rp 165.000</p>
-                                                        <p><a href="#" class="btn btn-primary" role="button">
-                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-                                                          <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                           <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-                                                           </span> Buy</button></p>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-                                                     <div class="col-sm-6 col-md-4">
-                                                      <div class="thumbnail">
-                                                       <img src="images/m-clothes/men24.jpg" alt="17seven Original">
-                                                       <div class="caption">
-                                                        <h3>17seven Original</h3>
-                                                        <p>Longsleeve Base<br> Rp 185.000</p>
-                                                        <p><a href="#" class="btn btn-primary" role="button">
-                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                        <h3>Billabong</h3>
+                                                        <p>All Day X <br> Rp 699.000 </p>
+                                                        <p><button type="button" class = "btn btn-primary wishlist" product_name='Billabong All Day X' product_id='men21' product_price=' 699.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
                                                            </span> Buy</button></p>
@@ -438,30 +397,16 @@
                                                      </div>
                                                    </div>
 
-                                                   <!-- row 9 -->
+                                                   <!-- row 8 -->
                                                    <div class="row">
                                                     <div class="col-sm-6 col-md-4">
                                                       <div class="thumbnail">
-                                                        <img src="images/m-clothes/men25.jpg" alt="Rusty">
+                                                        <img src="images/m-clothes/men22.jpg" alt="BRBL">
                                                         <div class="caption">
-                                                         <h3>Rusty</h3>
-                                                         <p>Salem Short Sleeve Tee Coal<br> Rp 569.000</p>
-                                                         <p><a href="#" class="btn btn-primary" role="button">
-                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-                                                          <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                           <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-                                                           </span> Buy</button></p>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-                                                     <div class="col-sm-6 col-md-4">
-                                                      <div class="thumbnail">
-                                                        <img src="images/m-clothes/men26.jpg" alt="Adidas">
-                                                        <div class="caption">
-                                                          <h3>Adidas</h3>
-                                                          <p>Adidas Club Short<br> Rp 449.000</p>
-                                                          <p><a href="#" class="btn btn-primary" role="button">
-                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                          <h3>BRBL</h3>
+                                                          <p>PSNA. 01<br> Rp 165.000</p>
+                                                          <p><button type="button" class = "btn btn-primary wishlist" product_name='BRBL PSNA. 01' product_id='men22' product_price=' 165.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
                                                              </span> Buy</button></p>
@@ -470,44 +415,12 @@
                                                        </div>
                                                        <div class="col-sm-6 col-md-4">
                                                         <div class="thumbnail">
-                                                         <img src="images/m-clothes/men27.jpg" alt="Gianni Vissetin">
-                                                         <div class="caption">
-                                                          <h3>Gianni Vissetin</h3>
-                                                          <p>Celana Panjang<br> Rp 429.000</p>
-                                                          <p><a href="#" class="btn btn-primary" role="button">
-                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-                                                            <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                             <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-                                                             </span> Buy</button></p>
-                                                           </div>
-                                                         </div>
-                                                       </div>
-                                                     </div>
-
-                                                     <!-- row 10 -->
-                                                     <div class="row">
-                                                      <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                          <img src="images/m-clothes/men28.jpg" alt="Cressida">
+                                                          <img src="images/m-clothes/men23.jpg" alt="ZALORA">
                                                           <div class="caption">
-                                                           <h3>Cressida</h3>
-                                                           <p>Bomber Jacket with 2 List Plakcet<br> Rp 469.900</p>
-                                                           <p><a href="#" class="btn btn-primary" role="button">
-                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-                                                            <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
-                                                             <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-                                                             </span> Buy</button></p>
-                                                           </div>
-                                                         </div>
-                                                       </div>
-                                                       <div class="col-sm-6 col-md-4">
-                                                        <div class="thumbnail">
-                                                          <img src="images/m-clothes/men29.jpg" alt="Cotton On">
-                                                          <div class="caption">
-                                                            <h3>Cotton On</h3>
-                                                            <p>Super Skinny Jeans<br> Rp 449.900</p>
-                                                            <p><a href="#" class="btn btn-primary" role="button">
-                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                            <h3>ZALORA</h3>
+                                                            <p>Washed Chino Shorts With Turn Up Cuff<br> Rp 279.000</p>
+                                                            <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Washed Chino Shorts With Turn Up Cuff' product_id='men23' product_price=' 279.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
                                                                </span> Buy</button></p>
@@ -516,12 +429,12 @@
                                                          </div>
                                                          <div class="col-sm-6 col-md-4">
                                                           <div class="thumbnail">
-                                                           <img src="images/m-clothes/men30.jpg" alt="GREENLIGHT">
+                                                           <img src="images/m-clothes/men24.jpg" alt="17seven Original">
                                                            <div class="caption">
-                                                            <h3>GREENLIGHT</h3>
-                                                            <p>Jacket Zipper 1208<br> Rp 449.500</p>
-                                                            <p><a href="#" class="btn btn-primary" role="button">
-                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                            <h3>17seven Original</h3>
+                                                            <p>Longsleeve Base<br> Rp 185.000</p>
+                                                            <p><button type="button" class = "btn btn-primary wishlist" product_name='17seven Original Longsleeve Base' product_id='men24' product_price=' 185.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
                                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
                                                                </span> Buy</button></p>
@@ -529,9 +442,101 @@
                                                            </div>
                                                          </div>
                                                        </div>
-</div>
-<div id = "box"><p id = "number">0</p></div>
 
+                                                       <!-- row 9 -->
+                                                       <div class="row">
+                                                        <div class="col-sm-6 col-md-4">
+                                                          <div class="thumbnail">
+                                                            <img src="images/m-clothes/men25.jpg" alt="Rusty">
+                                                            <div class="caption">
+                                                             <h3>Rusty</h3>
+                                                             <p>Salem Short Sleeve Tee Coal<br> Rp 569.000</p>
+                                                             <p><button type="button" class = "btn btn-primary wishlist" product_name='Rusty Salem Short Sleeve Tee Coal' product_id='men25' product_price=' 569.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
+                                                              <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                               <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                               </span> Buy</button></p>
+                                                             </div>
+                                                           </div>
+                                                         </div>
+                                                         <div class="col-sm-6 col-md-4">
+                                                          <div class="thumbnail">
+                                                            <img src="images/m-clothes/men26.jpg" alt="Adidas">
+                                                            <div class="caption">
+                                                              <h3>Adidas</h3>
+                                                              <p>Adidas Club Short<br> Rp 449.000</p>
+                                                              <p><button type="button" class = "btn btn-primary wishlist" product_name='Adidas Club Short' product_id='men26' product_price=' 449.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
+                                                                <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                                 </span> Buy</button></p>
+                                                               </div>
+                                                             </div>
+                                                           </div>
+                                                           <div class="col-sm-6 col-md-4">
+                                                            <div class="thumbnail">
+                                                             <img src="images/m-clothes/men27.jpg" alt="Gianni Vissetin">
+                                                             <div class="caption">
+                                                              <h3>Gianni Vissetin</h3>
+                                                              <p>Celana Panjang<br> Rp 429.000</p>
+                                                              <p><button type="button" class = "btn btn-primary wishlist" product_name='Gianni Vissetin' product_id='men27' product_price=' 429.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
+                                                                <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                                 </span> Buy</button></p>
+                                                               </div>
+                                                             </div>
+                                                           </div>
+                                                         </div>
+
+                                                         <!-- row 10 -->
+                                                         <div class="row">
+                                                          <div class="col-sm-6 col-md-4">
+                                                            <div class="thumbnail">
+                                                              <img src="images/m-clothes/men28.jpg" alt="Cressida">
+                                                              <div class="caption">
+                                                               <h3>Cressida</h3>
+                                                               <p>Bomber Jacket with 2 List Plakcet<br> Rp 469.900</p>
+                                                               <p><button type="button" class = "btn btn-primary wishlist" product_name='Cressida Bomber Jacket with 2 List Plakcet' product_id='men28' product_price=' 469.900' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
+                                                                <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                                 </span> Buy</button></p>
+                                                               </div>
+                                                             </div>
+                                                           </div>
+                                                           <div class="col-sm-6 col-md-4">
+                                                            <div class="thumbnail">
+                                                              <img src="images/m-clothes/men29.jpg" alt="Cotton On">
+                                                              <div class="caption">
+                                                                <h3>Cotton On</h3>
+                                                                <p>Super Skinny Jeans<br> Rp 449.900</p>
+                                                                <p><button type="button" class = "btn btn-primary wishlist" product_name='Cotton On Super Skinny Jeans' product_id='men29' product_price=' 449.900' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
+                                                                  <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                                   </span> Buy</button></p>
+                                                                 </div>
+                                                               </div>
+                                                             </div>
+                                                             <div class="col-sm-6 col-md-4">
+                                                              <div class="thumbnail">
+                                                               <img src="images/m-clothes/men30.jpg" alt="GREENLIGHT">
+                                                               <div class="caption">
+                                                                <h3>GREENLIGHT</h3>
+                                                                <p>Jacket Zipper 1208<br> Rp 449.500</p>
+                                                                <p><button type="button" class = "btn btn-primary wishlist" product_name='GREENLIGHT' product_id='men30' product_price=' 449.500' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>
+                                                                  <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
+                                                                   <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+                                                                   </span> Buy</button></p>
+                                                                 </div>
+                                                               </div>
+                                                             </div>
+                                                           </div>
+                                                         </div>
+                                                         <div id = "box"><p id = "number">0</p></div>
+                                                       </div>
                                                        <!-- Footer -->
                                                        <div class = "footer">
                                                         <footer>
@@ -541,6 +546,15 @@
                                                           </footer>
                                                         </div>
 
+                                                        <div id='wish_list' class='col-s'>
+                                                          <p class="wish_list_heading">
+                                                            <span id='listitem'>0</span>
+                                                            <span id='p_label'>Wishlist</span>
+                                                          </p>
+                                                          <table id='wish_list_item' border='0'></table>
+                                                        </div>
+
+                                                        <script type='text/javascript' src='assets/script.js'></script>
                                                         <script src="js\jquery-3.2.1.min.js"></script>
                                                         <script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
 
