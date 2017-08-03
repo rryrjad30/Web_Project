@@ -10,6 +10,22 @@ nav.navbar{
 	margin: 0px;
 }
 
+#box {
+	width: 16px;
+	height: 16px;
+	background: green;
+	position: fixed;
+	left: 65px;
+	top: 3px;
+	z-index: 9999;
+	border-radius: 5px;
+	color: white;
+}
+
+#number {
+	text-align: center;
+}
+
 .row {
 	margin-right: auto;
 	margin-left: auto;
@@ -24,19 +40,6 @@ nav.navbar{
 	text-align: center;
 	padding-left:4em 
 }
-
-/*.thumbnail {
-	display: inline-block;
-}
-
-.thumbnail img {
-	margin-right: 1em;
-	margin-left: 1em;
-}
-
-.thumbnail .caption{
-	padding: 3em;
-}*/
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
 	background-color: #000000 !important;

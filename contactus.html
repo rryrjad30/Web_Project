@@ -23,109 +23,110 @@
 				<a class="navbar-brand" href="index.html">PV</a>
 			</div>
 
-			 <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-          <!-- Men Dropdown -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="menfashion.html">Clothing</a></li>
-              <li><a href="mensshoes.html">Shoes</a></li>
-              <li><a href="menssport.html">Sports</a></li>
-            </ul>
-          </li>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<a class = "navbar-brand" rel = "home" href="cart.html"><span class = "glyphicon glyphicon-shopping-cart"></span></a>
+					<li class><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+					<!-- Men Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Men <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="menfashion.html">Clothing</a></li>
+							<li><a href="mensshoes.html">Shoes</a></li>
+							<li><a href="menssport.html">Sports</a></li>
+						</ul>
+					</li>
 
-          <!-- Women Dropdown -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            Women <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="womenfashion.html">Clothing</a></li>
-              <li><a href="womensshoes.html">Shoes</a></li>
-              <li><a href="womenssport.html">Sports</a></li>
-            </ul>
-          </li>
-           <!-- Accessories + Contact Us -->
-          <li><a href="accessories.html">Accessories </a></li>
-          <li><a href="contactus.html">Contact Us </a></li>
-         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+					<!-- Women Dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Women <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="womenfashion.html">Clothing</a></li>
+								<li><a href="womensshoes.html">Shoes</a></li>
+								<li><a href="womenssport.html">Sports</a></li>
+							</ul>
+						</li>
+						<!-- Accessories + Contact Us -->
+						<li><a href="accessories.html">Accessories </a></li>
+						<li><a href="contactus.html">Contact Us </a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
 
-	<div class = "jumbotron">
-		<h1><span class = "label label-default">Contact Us</span></h1>
-		<!-- Isi -->
-		<form class="form-horizontal">
-			<div class="form-group">
-				<label class="col-sm-1 control-label">Nama</label>
-				<div class ="col-sm-10">
-					<input type="text" class="form-control" id="nama">
+		<div class = "jumbotron">
+			<h1><span class = "label label-default">Contact Us</span></h1>
+			<!-- Isi -->
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-1 control-label">Nama</label>
+					<div class ="col-sm-10">
+						<input type="text" class="form-control" id="nama">
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-sm-1 control-label">Email</label>
-				<div class ="col-sm-10">
-					<input type="text" class="form-control" id="email">
+				<div class="form-group">
+					<label class="col-sm-1 control-label">Email</label>
+					<div class ="col-sm-10">
+						<input type="text" class="form-control" id="email">
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-sm-1 control-label">Telepon</label>
-				<div class ="col-sm-10">
-					<input type="text" class="form-control" id="telepon">
+				<div class="form-group">
+					<label class="col-sm-1 control-label">Telepon</label>
+					<div class ="col-sm-10">
+						<input type="text" class="form-control" id="telepon">
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-sm-1 control-label">Message</label>
-				<div  class ="col-sm-10">
-					<textarea type = "text" class= "form-control" id = "message" rows = "3"></textarea>
+				<div class="form-group">
+					<label class="col-sm-1 control-label">Message</label>
+					<div  class ="col-sm-10">
+						<textarea type = "text" class= "form-control" id = "message" rows = "3"></textarea>
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-1 col-sm-10">
-					<button id = "btnTambah" onclick = "tambahData()" class= "btn btn-default" type="button">Tambah</button>	
-					<button id = "btnUpdate" onclick = "updateData()" class= "btn btn-default" type="button" style = "display : none">Update</button>
+				<div class="form-group">
+					<div class="col-sm-offset-1 col-sm-10">
+						<button id = "btnTambah" onclick = "tambahData()" class= "btn btn-default" type="button">Tambah</button>	
+						<button id = "btnUpdate" onclick = "updateData()" class= "btn btn-default" type="button" style = "display : none">Update</button>
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
 
-		<table id = "kontak" class="table table-bordered table-striped">
-			<thead>
-				<tr class="warning">
-					<td>Nama</td>
-					<td>Email</td>
-					<td>Telepon</td>
-					<td>Message</td>
-				</tr>
-			</thead>
-			<tbody class="table table-striped">
+			<table id = "kontak" class="table table-bordered table-striped">
+				<thead>
+					<tr class="warning">
+						<td>Nama</td>
+						<td>Email</td>
+						<td>Telepon</td>
+						<td>Message</td>
+					</tr>
+				</thead>
+				<tbody class="table table-striped">
 
-			</tbody>
-		</table>
-	</div>
-
-	<!-- Footer -->
-	<div class = "footer">
-		<footer>
-			<p>Copyright &copy; 2017 Pierry &lt;<a href="mailto:pierry27@gmail.com">
-				pierry27@gmail.com</a>&gt;</p>
-			</footer>
+				</tbody>
+			</table>
 		</div>
 
-		<script src="js\jquery-3.2.1.min.js"></script>
-		<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
-		<script>
-			var oldItem = null
+		<!-- Footer -->
+		<div class = "footer">
+			<footer>
+				<p>Copyright &copy; 2017 Pierry &lt;<a href="mailto:pierry27@gmail.com">
+					pierry27@gmail.com</a>&gt;</p>
+				</footer>
+			</div>
 
-			function hapusData(event){
-				if(confirm('Hapus ?')){
-					event.target.parentNode.parentNode.remove()
+			<script src="js\jquery-3.2.1.min.js"></script>
+			<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+			<script>
+				var oldItem = null
+
+				function hapusData(event){
+					if(confirm('Hapus ?')){
+						event.target.parentNode.parentNode.remove()
+					}
 				}
-			}
 
-			function editData(event){
+				function editData(event){
 					// alert('Edit ?')
 					var obj = event.target.parentNode
 					// message
@@ -273,6 +274,23 @@
 				function bersikanFrom(){
 					document.querySelector('form').reset()
 				}
+
+
+				var n = 0;
+				function increaseNumber (){
+					n=n+1;
+					document.getElementById('number').innerHTML = n;
+					zeroNumber();
+				}
+				function zeroNumber (){
+					if(document.getElementById('number').innerHTML==0){
+						document.getElementById('box').style.display ="none";
+					}
+					else{
+						document.getElementById('box').style.display ="block";
+					}
+				}
+				
 				
 			</script>
 		</body>

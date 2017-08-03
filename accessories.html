@@ -26,6 +26,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
+					<a class = "navbar-brand" rel = "home" href="cart.html"><span class = "glyphicon glyphicon-shopping-cart"></span></a>
 					<li class><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
 					<!-- Men Dropdown -->
 					<li class="dropdown">
@@ -66,60 +67,61 @@
 
 		<!-- image pixel 242 x 200 -->
 		<div class="row">
-		<h5><a href="index.html">Home </a> > <a href="accessories.html"> Accessories </a></h5>
+			<h5><a href="index.html">Home </a> > <a href="accessories.html"> Accessories </a></h5>
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail">
-					<img src="images/242 x 200 (5).jpg" alt="Kent & Crew">
+					<img src="images/accessories/242 x 200 (5).jpg" alt="Kent & Crew">
 					<div class="caption">
 						<h3>Kent & Crew</h3>
 						<p>Canvas Briefcase Bag</p>
 						<p>Rp 419.900</p>
 						<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-							<a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-							</span>Buy</a></p>
+							<button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+							</span>Buy</button></p>
 						</div>
 					</div>			
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<div class="thumbnail">
-						<img src="images/242 x 200 (2).jpg" alt="JanSport">
+						<img src="images/accessories/242 x 200 (2).jpg" alt="JanSport">
 						<div class="caption">
 							<h3>JanSport</h3>
 							<p>Superbreak</p>
 							<p>Rp 399.000</p>
 							<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-								<a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-								</span>Buy</a></p>
+								<button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Buy</button></p>
 							</div>
 						</div>			
 					</div>
 					<div class="col-sm-6 col-md-3">
 						<div class="thumbnail">
-							<img src="images/242 x 200 (3).jpg" alt="Herschel">
+							<img src="images/accessories/242 x 200 (3).jpg" alt="Herschel">
 							<div class="caption">
 								<h3>Herschel</h3>
 								<p>Anchor Sleeve 14</p>
 								<p>RP 629.000</p>
 								<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-									<a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-									</span>Buy</a></p>
+									<button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+									</span>Buy</button></p>
 								</div>
 							</div>			
 						</div>
 						<div class="col-sm-6 col-md-3">
 							<div class="thumbnail">
-								<img src="images/242 x 200 (4).jpg" alt="Urban State">
+								<img src="images/accessories/242 x 200 (4).jpg" alt="Urban State">
 								<div class="caption">
 									<h3>Urban State</h3>
 									<p>Tas Pu Zipper Slingbag</p>
 									<p>RP 380.000</p>
 									<p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
-										<a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
-										</span>Buy</a></p>
+										<button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">          
+										</span>Buy</button></p>
 									</div>
 								</div>			
 							</div>
 						</div>
+
+						<div id = "box"><p id = "number">0</p></div>
 
 						<!-- Footer -->
 						<div class = "footer">
@@ -131,5 +133,22 @@
 
 							<script src="js\jquery-3.2.1.min.js"></script>
 							<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+
+							<script type="text/javascript">
+								var n = 0;
+								function increaseNumber (){
+									n=n+1;
+									document.getElementById('number').innerHTML = n;
+									zeroNumber();
+								}
+								function zeroNumber (){
+									if(document.getElementById('number').innerHTML==0){
+										document.getElementById('box').style.display ="none";
+									}
+									else{
+										document.getElementById('box').style.display ="block";
+									}
+								}
+							</script>
 						</body>
 						</html>
