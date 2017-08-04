@@ -13,7 +13,7 @@
   <link rel="stylesheet" id="style-css" href="assets/style.css" type="text/css" media="all">
   <title>Woman Fashion</title>
 </head>
-<body>
+<body onclick="zeroNumber()">
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -30,7 +30,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <a class = "navbar-brand" rel = "home" href="cart.html"><span class = "glyphicon glyphicon-shopping-cart"></span></a>
+
           <li class><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
           <!-- Men Dropdown -->
           <li class="dropdown">
@@ -57,6 +57,7 @@
             <li><a href="accessories.html">Accessories </a></li>
             <li><a href="contactus.html">Contact Us </a></li>
           </ul>
+          <a class = "navbar-brand" rel = "home" href="cart.html"><span class = "glyphicon glyphicon-shopping-cart cart"></span></a>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -81,8 +82,8 @@
               <div class="caption">
                 <h3>ZALORA</h3>
                 <p>Collection Fluted Sleeve Off Shoulder Dress<br> Rp 299.000</p>
-                <p><a href="#" class="btn btn-primary" role="button">
-                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Collection Fluted Sleeve Off Shoulder Dress' product_id='wom1' product_price=' 299.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                    </span> Buy</button></p>
@@ -95,8 +96,8 @@
                 <div class="caption">
                   <h3>ZALORA</h3>
                   <p>Collection Pleated Jumpsuit<br> Rp 399.000</p>
-                  <p><a href="#" class="btn btn-primary" role="button">
-                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                  <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Collection Pleated Jumpsuit' product_id='womw' product_price=' 399.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                      </span> Buy</button></p>
@@ -109,8 +110,8 @@
                   <div class="caption">
                     <h3>ZALORA</h3>
                     <p>Collection Tailored Playsuit<br> Rp 339.000 </p>
-                    <p><a href="#" class="btn btn-primary" role="button">
-                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                    <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Collection Tailored Playsuit' product_id='wom3' product_price=' 339.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                        </span> Buy</button></p>
@@ -127,8 +128,8 @@
                     <div class="caption">
                       <h3>Envy Look</h3>
                       <p>Cotton Half Baggy Pants<br> Rp 374.000</p>
-                      <p><a href="#" class="btn btn-primary" role="button">
-                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                      <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look Cotton Half Baggy Pants' product_id='wom4' product_price=' 374.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                          </span> Buy</button></p>
@@ -141,8 +142,8 @@
                       <div class="caption">
                         <h3>Envy Look</h3>
                         <p>The Falling Pants<br> Rp 397.000</p>
-                        <p><a href="#" class="btn btn-primary" role="button">
-                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                        <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look The Falling Pants' product_id='wom5' product_price=' 397.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                            </span> Buy</button></p>
@@ -155,8 +156,8 @@
                         <div class="caption">
                           <h3>Envy Look</h3>
                           <p>I Love You One-Piece Dress<br> Rp 398.000 </p>
-                          <p><a href="#" class="btn btn-primary" role="button">
-                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                          <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look I Love You One-Piece Dress' product_id='wom6' product_price=' 398.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                              </span> Buy</button></p>
@@ -173,8 +174,8 @@
                           <div class="caption">
                             <h3>Envy Look</h3>
                             <p>Tension T-Shirt and Skirt Set<br> Rp 397.000</p>
-                            <p><a href="#" class="btn btn-primary" role="button">
-                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                            <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look Tension T-Shirt and Skirt Set' product_id='wom7' product_price=' 397.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                </span> Buy</button></p>
@@ -187,8 +188,8 @@
                             <div class="caption">
                               <h3>Envy Look</h3>
                               <p>Off Check Blanc<br> Rp 397.000</p>
-                              <p><a href="#" class="btn btn-primary" role="button">
-                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                              <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look Off Check Blanc' product_id='wom8' product_price=' 397.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                  </span> Buy</button></p>
@@ -201,8 +202,8 @@
                               <div class="caption">
                                 <h3>Mango</h3>
                                 <p>Jeans Straight Ring<br> Rp 899.000 </p>
-                                <p><a href="#" class="btn btn-primary" role="button">
-                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                <p><button type="button" class = "btn btn-primary wishlist" product_name='Mango Jeans Straight Ring' product_id='wom9' product_price=' 899.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                    </span> Buy</button></p>
@@ -219,8 +220,8 @@
                                 <div class="caption">
                                   <h3>Mango</h3>
                                   <p>Lace-Up Cotton Skirt<br> Rp 599.000</p>
-                                  <p><a href="#" class="btn btn-primary" role="button">
-                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                  <p><button type="button" class = "btn btn-primary wishlist" product_name='Mango Lace-Up Cotton Skirt' product_id='wom10' product_price=' 599.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                      </span> Buy</button></p>
@@ -233,8 +234,8 @@
                                   <div class="caption">
                                     <h3>Lois Jeans</h3>
                                     <p>Cardigan Outerwear<br> Rp 359.500</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">
-                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                    <p><button type="button" class = "btn btn-primary wishlist" product_name='Lois Jeans Cardigan Outerwear' product_id='wom11' product_price=' 359.500' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                        </span> Buy</button></p>
@@ -247,8 +248,8 @@
                                     <div class="caption">
                                       <h3>Exit</h3>
                                       <p>Alisha<br> Rp 239.900 </p>
-                                      <p><a href="#" class="btn btn-primary" role="button">
-                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                      <p><button type="button" class = "btn btn-primary wishlist" product_name='Exit Alisha' product_id='wom12' product_price=' 239.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                          </span> Buy</button></p>
@@ -265,8 +266,8 @@
                                       <div class="caption">
                                         <h3>3SECOND</h3>
                                         <p>Text Casual Sweater<br> Rp 329.500</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">
-                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                        <p><button type="button" class = "btn btn-primary wishlist" product_name='3SECOND Text Casual Sweater' product_id='wom13' product_price=' 329.500' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                            </span> Buy</button></p>
@@ -279,8 +280,8 @@
                                         <div class="caption">
                                           <h3>Mango</h3>
                                           <p>Decorative Bows Trench<br> Rp 1.499.000</p>
-                                          <p><a href="#" class="btn btn-primary" role="button">
-                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                          <p><button type="button" class = "btn btn-primary wishlist" product_name='Mango Decorative Bows Trench' product_id='wom14' product_price=' 1.499.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                              </span> Buy</button></p>
@@ -293,8 +294,8 @@
                                           <div class="caption">
                                             <h3>Noir Sur Blanc</h3>
                                             <p>Ladies Poncho<br> Rp 599.000 </p>
-                                            <p><a href="#" class="btn btn-primary" role="button">
-                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                            <p><button type="button" class = "btn btn-primary wishlist" product_name='Noir Sur Blanc Ladies Poncho' product_id='wom1' product_price=' 599.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                </span> Buy</button></p>
@@ -311,8 +312,8 @@
                                             <div class="caption">
                                               <h3>Arjuna Weda</h3>
                                               <p>Dress Batik Raster Parang<br> Rp 349.300</p>
-                                              <p><a href="#" class="btn btn-primary" role="button">
-                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                              <p><button type="button" class = "btn btn-primary wishlist" product_name='Arjuna Weda Dress Batik Raster Parang' product_id='wom16' product_price=' 349.300' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                  </span> Buy</button></p>
@@ -325,8 +326,8 @@
                                               <div class="caption">
                                                 <h3>Arjuna Weda</h3>
                                                 <p>Sackdress Batik Manuk Kembar<br> Rp 398.300</p>
-                                                <p><a href="#" class="btn btn-primary" role="button">
-                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                <p><button type="button" class = "btn btn-primary wishlist" product_name='Arjuna Weda Sackdress Batik Manuk Kembar' product_id='wom17' product_price=' 398.300' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>  
                                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                    </span> Buy</button></p>
@@ -339,8 +340,8 @@
                                                 <div class="caption">
                                                   <h3>ELSY'S</h3>
                                                   <p>Blus Rompi Bahan Kerut Bros Burung<br> Rp 299.900 </p>
-                                                  <p><a href="#" class="btn btn-primary" role="button">
-                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                  <p><button type="button" class = "btn btn-primary wishlist" product_name='ELSYs Blus Rompi Bahan Kerut Bros Burung' product_id='wom18' product_price=' 299.900' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                      </span> Buy</button></p>
@@ -357,8 +358,8 @@
                                                   <div class="caption">
                                                     <h3>Envy Look</h3>
                                                     <p>Made One Piece<br> Rp 386.000</p>
-                                                    <p><a href="#" class="btn btn-primary" role="button">
-                                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                    <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look Made One Piece' product_id='wom19' product_price=' 386.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                        </span> Buy</button></p>
@@ -371,8 +372,8 @@
                                                     <div class="caption">
                                                       <h3>Envy Look</h3>
                                                       <p>Suspender Jump Suit<br> Rp 397.000</p>
-                                                      <p><a href="#" class="btn btn-primary" role="button">
-                                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                      <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look Suspender Jump Suit' product_id='wom20' product_price=' 397.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                          </span> Buy</button></p>
@@ -385,8 +386,8 @@
                                                       <div class="caption">
                                                         <h3>Envy Look</h3>
                                                         <p>Boat Neck Blouse<br> Rp 397.000 </p>
-                                                        <p><a href="#" class="btn btn-primary" role="button">
-                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                        <p><button type="button" class = "btn btn-primary wishlist" product_name='Envy Look Boat Neck Blouse' product_id='wom21' product_price=' 397.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                            </span> Buy</button></p>
@@ -403,8 +404,8 @@
                                                         <div class="caption">
                                                           <h3>ZALORA</h3>
                                                           <p>Love Full Circle Skirt dengan Waist Tie<br> Rp 279.000</p>
-                                                          <p><a href="#" class="btn btn-primary" role="button">
-                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                          <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Love Full Circle Skirt dengan Waist Tie' product_id='wom22' product_price=' 279.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                              </span> Buy</button></p>
@@ -417,8 +418,8 @@
                                                           <div class="caption">
                                                             <h3>Mango</h3>
                                                             <p>Vent Pencil Skirt<br> Rp 499.000</p>
-                                                            <p><a href="#" class="btn btn-primary" role="button">
-                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                            <p><button type="button" class = "btn btn-primary wishlist" product_name='Mango Vent Pencil Skirt' product_id='wom23' product_price=' 499.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                               <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                </span> Buy</button></p>
@@ -431,8 +432,8 @@
                                                             <div class="caption">
                                                               <h3>Lois Jeans</h3>
                                                               <p>Long Pants Denim<br> Rp 459.500 </p>
-                                                              <p><a href="#" class="btn btn-primary" role="button">
-                                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                              <p><button type="button" class = "btn btn-primary wishlist" product_name='Lois Jeans Long Pants Denim' product_id='wom24' product_price=' 459.500' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                                 <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                  </span> Buy</button></p>
@@ -449,8 +450,8 @@
                                                               <div class="caption">
                                                                 <h3>Something Borrowed</h3>
                                                                 <p>Embroidered High Waist Shorts<br> Rp 279.000</p>
-                                                                <p><a href="#" class="btn btn-primary" role="button">
-                                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                <p><button type="button" class = "btn btn-primary wishlist" product_name='Something Borrowed Embroidered High Waist Shorts' product_id='wom25' product_price=' 279.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                                   <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                    </span> Buy</button></p>
@@ -462,9 +463,9 @@
                                                                 <img src="images/w-clothes/wom26.jpg" alt="ZALORA">
                                                                 <div class="caption">
                                                                   <h3>ZALORA</h3>
-                                                                  <p>Love Skort with Waist Straps<br> Rp 279.000</p>
-                                                                  <p><a href="#" class="btn btn-primary" role="button">
-                                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                  <p>Love Skirt with Waist Straps<br> Rp 279.000</p>
+                                                                  <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Love Skirt with Waist Straps' product_id='wom26' product_price=' 279.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                                     <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                      </span> Buy</button></p>
@@ -477,8 +478,8 @@
                                                                   <div class="caption">
                                                                     <h3>Mango</h3>
                                                                     <p>Flowy Skirt<br> Rp 499.000 </p>
-                                                                    <p><a href="#" class="btn btn-primary" role="button">
-                                                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                    <p><button type="button" class = "btn btn-primary wishlist" product_name='Mango Flowy Skirt' product_id='wom27' product_price=' 499.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button>  
                                                                       <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                        </span> Buy</button></p>
@@ -495,8 +496,8 @@
                                                                     <div class="caption">
                                                                       <h3>Something Borrowed</h3>
                                                                       <p>Cut-in Romper<br> Rp 299.000</p>
-                                                                      <p><a href="#" class="btn btn-primary" role="button">
-                                                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                      <p><button type="button" class = "btn btn-primary wishlist" product_name='Something Borrowed Cut-in Romper' product_id='wom28' product_price=' 349.300' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                                         <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                          </span> Buy</button></p>
@@ -509,8 +510,8 @@
                                                                       <div class="caption">
                                                                         <h3>GRAPHIS</h3>
                                                                         <p>Long Overall<br> Rp 559.000</p>
-                                                                        <p><a href="#" class="btn btn-primary" role="button">
-                                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                        <p><button type="button" class = "btn btn-primary wishlist" product_name='GRAPHIS Long Overall' product_id='wom29' product_price=' 559.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                          <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                                           <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                            </span> Buy</button></p>
@@ -523,8 +524,8 @@
                                                                         <div class="caption">
                                                                           <h3>ZALORA</h3>
                                                                           <p>Love Embroidered Cold Shoulder Playsuit<br> Rp 349.000 </p>
-                                                                          <p><a href="#" class="btn btn-primary" role="button">
-                                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</a> 
+                                                                          <p><button type="button" class = "btn btn-primary wishlist" product_name='ZALORA Love Embroidered Cold Shoulder Playsuit' product_id='wom30' product_price=' 349.000' data_toggle = "modal" data-target = ".bs-example-modal-lg">
+                                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Save</button> 
                                                                             <button type="button" class = "btn btn-default" data_toggle = "modal" data-target = ".bs-example-modal-lg" onclick="increaseNumber()">
                                                                              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">         	
                                                                              </span> Buy</button></p>
