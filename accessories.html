@@ -247,41 +247,74 @@
 														<div id = "box"><p id = "number">0</p></div>
 
 														<!-- Footer -->
-														<div class = "footer">
-															<footer>
-																<p>Copyright &copy; 2017 PV &lt;<a href="mailto:pierry27@gmail.com">
-																	pierry27@gmail.com</a>&gt;&lt;<a href="mailto:vleonie.vl@gmail.com">
-																	vleonie.vl@gmail.com</a>&gt;</p>
-																</footer>
+														<footer id="myFooter">
+															<div class="container">
+																<div class="row">
+																	<div class="col-sm-3 myCols">
+																		<a href="index.html"><h3>Home</h3></a>
+																	</div>
+																	<div class="col-sm-3 myCols">
+																		<a href="/"><h3>Men</h3></a>
+																		<ul>
+																			<li><a href="menfashion.html">Clothing</a></li>
+																			<li><a href="mensshoes.html">Shoes</a></li>
+																			<li><a href="menssport.html">Sports</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-sm-3 myCols">
+																		<a href="/"><h3>Women</h3></a>
+																		<ul>
+																			<li><a href="womenfashion.html">Clothing</a></li>
+																			<li><a href="womensshoes.html">Shoes</a></li>
+																			<li><a href="womenssport.htmk">Sports</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-sm-3 myCols">
+																		<h5>Legal</h5>
+																		<ul>
+																			<li><a href="termandconditions.html">Terms and Conditions</a></li>
+																			<li><a href="#">Privacy Policy</a></li>
+																		</ul>
+																	</div>
+																</div>
 															</div>
-
-															<div id='wish_list' class='col-s'>
-																<p class="wish_list_heading">
-																	<span id='listitem'>0</span>
-																	<span id='p_label'>Wishlist</span>
-																</p>
-																<table id='wish_list_item' border='0'></table>
+															<div class="social-networks">
+																<a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+																<a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook-official"></i></a>
+																<a href="https://www.google.co.id" class="google"><i class="fa fa-google-plus"></i></a>
 															</div>
+															<div class="footer-copyright">
+																<p>© 2017 PV </p>
+															</div>
+														</footer>
 
-															<script type='text/javascript' src='assets/script.js'></script>
-															<script src="js\jquery-3.2.1.min.js"></script>
-															<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+														<div id='wish_list' class='col-s'>
+															<p class="wish_list_heading">
+																<span id='listitem'>0</span>
+																<span id='p_label'>Wishlist</span>
+															</p>
+															<table id='wish_list_item' border='0'></table>
+														</div>
 
-															<script type="text/javascript">
-																var n = 0;
-																function increaseNumber (){
-																	n=n+1;
-																	document.getElementById('number').innerHTML = n;
-																	zeroNumber();
+														<script type='text/javascript' src='assets/script.js'></script>
+														<script src="js\jquery-3.2.1.min.js"></script>
+														<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+
+														<script type="text/javascript">
+															var n = 0;
+															function increaseNumber (){
+																n=n+1;
+																document.getElementById('number').innerHTML = n;
+																zeroNumber();
+															}
+															function zeroNumber (){
+																if(document.getElementById('number').innerHTML==0){
+																	document.getElementById('box').style.display ="none";
 																}
-																function zeroNumber (){
-																	if(document.getElementById('number').innerHTML==0){
-																		document.getElementById('box').style.display ="none";
-																	}
-																	else{
-																		document.getElementById('box').style.display ="block";
-																	}
+																else{
+																	document.getElementById('box').style.display ="block";
 																}
-															</script>
-														</body>
-														</html>
+															}
+														</script>
+													</body>
+													</html>

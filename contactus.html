@@ -109,26 +109,59 @@
 		</div>
 
 		<!-- Footer -->
-		<div class = "footer">
-			<footer>
-				<p>Copyright &copy; 2017 Pierry &lt;<a href="mailto:pierry27@gmail.com">
-					pierry27@gmail.com</a>&gt;&lt;<a href="mailto:vleonie.vl@gmail.com">
-									vleonie.vl@gmail.com</a>&gt;</p>
-				</footer>
+		<footer id="myFooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 myCols">
+						<a href="index.html"><h3>Home</h3></a>
+					</div>
+					<div class="col-sm-3 myCols">
+						<a href="/"><h3>Men</h3></a>
+						<ul>
+							<li><a href="menfashion.html">Clothing</a></li>
+							<li><a href="mensshoes.html">Shoes</a></li>
+							<li><a href="menssport.html">Sports</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 myCols">
+						<a href="/"><h3>Women</h3></a>
+						<ul>
+							<li><a href="womenfashion.html">Clothing</a></li>
+							<li><a href="womensshoes.html">Shoes</a></li>
+							<li><a href="womenssport.htmk">Sports</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 myCols">
+						<h5>Legal</h5>
+						<ul>
+							<li><a href="termandconditions.html">Terms and Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
+			<div class="social-networks">
+				<a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="https://www.google.co.id" class="google"><i class="fa fa-google-plus"></i></a>
+			</div>
+			<div class="footer-copyright">
+				<p>© 2017 PV </p>
+			</div>
+		</footer>
+		
+		<script src="js\jquery-3.2.1.min.js"></script>
+		<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+		<script>
+			var oldItem = null
 
-			<script src="js\jquery-3.2.1.min.js"></script>
-			<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
-			<script>
-				var oldItem = null
-
-				function hapusData(event){
-					if(confirm('Hapus ?')){
-						event.target.parentNode.parentNode.remove()
-					}
+			function hapusData(event){
+				if(confirm('Hapus ?')){
+					event.target.parentNode.parentNode.remove()
 				}
+			}
 
-				function editData(event){
+			function editData(event){
 					// alert('Edit ?')
 					var obj = event.target.parentNode
 					// message
