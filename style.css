@@ -1,6 +1,31 @@
 body {
 	background: gray-lighter;
 }
+
+/*div.container{
+	padding-top: 10em;
+}*/
+
+div.container_header{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+div.container_row{
+	padding-top: 2em;
+}
+
+div.container_featuredbrands{
+	padding-top: 5em;
+	padding-bottom: 2em;	
+}
+
+h2.contact{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+}
+
 footer{
 	background-color: grey;
 	font-size: small;
