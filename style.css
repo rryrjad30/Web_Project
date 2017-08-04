@@ -10,6 +10,8 @@ footer{
 }
 nav.navbar{
 	margin: 0px;
+	background-color: #383737;
+	color: #ccc;
 }
 
 #box {
@@ -71,12 +73,12 @@ form.form-horizontal {
 
 /*footer*/
 #myFooter {
-	background-color: #373a48;
+	background-color: #333;
 	color:white;
 }
 
 #myFooter .footer-copyright{
-	background-color: #383737;
+	background-color: #222;
 	padding-top:3px;
 	padding-bottom:3px;
 	text-align: center;
